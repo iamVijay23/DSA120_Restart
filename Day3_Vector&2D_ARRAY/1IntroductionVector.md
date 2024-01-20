@@ -31,17 +31,15 @@ Each element in this array will be 0 or garbage by default
 
 - `vector<datatype> vector_name (size, value) ;` // creates a vector of integers with the specified size with having the same value although it size can increase as it is dynamic in size
 
-
 ## Features of Vectors
 
-1) Contiguous Memory: Elements in a vecotr are stored in contiguous memory locations , which makes it efficiend for random access and iteration.
+1. Contiguous Memory: Elements in a vecotr are stored in contiguous memory locations , which makes it efficiend for random access and iteration.
 
-2) Dynamic Sizing : Unlike built-in Array in C++, which have a fixed size, vector can dynamically resize itself as elements are added or removed. This dynamic sizing is managed internally , so you dont' need to worry about memory management.
+2. Dynamic Sizing : Unlike built-in Array in C++, which have a fixed size, vector can dynamically resize itself as elements are added or removed. This dynamic sizing is managed internally , so you dont' need to worry about memory management.
 
-3) Size and Capacity : Vecotr maintains two important Properties : the size which is the number of elements currently stored in the vector , and the capacity , which is the number of elements the vector can hold without reallocation.
+3. Size and Capacity : Vecotr maintains two important Properties : the size which is the number of elements currently stored in the vector , and the capacity , which is the number of elements the vector can hold without reallocation.
 
-4) Array-Like Access:  You can access elements in a vector using array-like syntax using square brackets [] or using  at() member function.
-
+4. Array-Like Access: You can access elements in a vector using array-like syntax using square brackets [] or using at() member function.
 
 ## Methods In Vectors
 
@@ -61,4 +59,11 @@ Each element in this array will be 0 or garbage by default
   `Syntax: vector_name.at();`
 
 - Front / Back : Access First and Last Element Respectively.
-`Syntax: vector_name.front() , vector_name.back()`;
+  `Syntax: vector_name.front() , vector_name.back()`;
+
+## Creating 2D array using vectors
+
+It is possible to create the 2D vector/array using vector also syntax :
+`vector< vector<data_type> > vector_name`
+
+## What is the initial size of Vector ?
