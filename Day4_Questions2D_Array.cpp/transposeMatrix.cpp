@@ -7,7 +7,7 @@ void transPoseMatrix(int arr[][3], int row, int col)
 
     for (int i = 0; i < row; i++)
     {
-        for (int j = 0; j <= i; j++)
+        for (int j = 0; j <= i; j++) // j=0 is working but some time it wont work so give condition j =i+1
         {
             swap(arr[i][j], arr[j][i]);
         }
