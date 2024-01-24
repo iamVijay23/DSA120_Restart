@@ -1,22 +1,23 @@
-//  Write a program to implement the Binary Search Algorithm for ond dimensional array
+// Find last occuerence of a number in a sorted array.
 
-#include <iostream>
-using namespace std;
 #include <iostream>
 using namespace std;
 
 // Time Complexity  -> O (log n)
-bool binarySearch(int arr[], int size, int target)
+int findLastOccurence(int arr[], int size, int target)
 {
     int start = 0;
     int end = size - 1;
     int mid = start + (end - start) / 2;
+
+    int answerIndex = -1;
     while (start <= end)
     {
 
         if (arr[mid] == target)
         {
-            return true;
+            answerIndex = mid;
+            start = mid + 1;
         }
         else if (arr[mid] < target)
         {
@@ -26,26 +27,25 @@ bool binarySearch(int arr[], int size, int target)
         {
             end = mid - 1;
         }
-
         mid = start + (end - start) / 2;
     }
 
-    return false;
+    return answerIndex;
 }
 
 int main()
 {
-    int arr[] = {10, 20, 30, 40, 50, 60, 70, 80, 90};
+    int arr[] = {10, 20, 30, 40, 60, 60, 60, 70, 80};
     int size = sizeof(arr) / sizeof(arr[0]);
     int target;
 
-    cout << "Enter Element to search: ";
+    cout << "Enter Element to search last occurence: ";
     cin >> target;
 
-    bool answer = binarySearch(arr, size, target);
-
-    if (answer)
-        cout << "Target Element is Present in Array";
+    int answerIndex = findLastOccurence(arr, size, target);
+ 
+    if (answerIndex>0)
+        cout << "Target Element is Present in Array at index -> " << answerIndex;
     else
         cout << "Target Element is Not Present in Array";
 
