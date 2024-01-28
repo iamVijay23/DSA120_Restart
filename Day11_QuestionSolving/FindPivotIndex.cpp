@@ -47,7 +47,7 @@ using namespace std;
 //     return -1;
 // }
 
-// BruteForce Approach for the finding the Pivot index -> Time Complexity O(N) and Space Complexity  O(N)
+// BruteForce Approach for the finding the Pivot index -> Time Complexity O(N^2) and Space Complexity  O(N)
 
 int findPivotIndex(vector<int> &nums)
 {
