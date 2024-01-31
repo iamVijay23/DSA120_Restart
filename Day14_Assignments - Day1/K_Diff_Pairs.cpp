@@ -1,4 +1,4 @@
-//  Leetcode  -> 532 k - different pairs of array  (Try other approach also)
+//  Leetcode  -> 532 k - different Unique  pairs of array  (Try other approach also)
 
 #include <iostream>
 #include <vector>
