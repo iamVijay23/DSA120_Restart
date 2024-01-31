@@ -31,7 +31,7 @@ int upperBound(int arr[], int size, int targetValue)
         if (arr[mid] > targetValue)
         {
             result = mid; // Update the result and continue searching in the left half
-            high = mid - 1;
+             high = mid - 1;
         }
         else
         {
@@ -72,11 +72,11 @@ int main()
 
     if (upperBoundIndex != -1)
     {
-        cout << "The lower bound of " << targetValue << " is at index: " << upperBoundIndex << endl;
+        cout << "The upper bound of " << targetValue << " is at index: " << upperBoundIndex << endl;
     }
     else
     {
-        std::cout << "The lower bound of " << targetValue << " is beyond the end of the array." << endl;
+        std::cout << "The upper bound of " << targetValue << " is beyond the end of the array." << endl;
     }
 
     return 0;
