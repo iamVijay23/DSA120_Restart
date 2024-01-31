@@ -124,7 +124,7 @@ int findPairsWithSet(vector<int> &nums, int k)
             j++;
         }
 
-        if (i == j)
+        if (i == j)// Yeha galti kar sakte ho please dry run once more
         {
             j++;
         }
