@@ -13,6 +13,12 @@ int findMin(vector<int>& arr) {
     while (start <= end) {
         int mid = (start + end) / 2;
 
+//  When the search space is already sorted and not rotated then minimum will be at the first position
+        if( arr[start] <= arr[end])
+        {
+            ans = arr[start];
+            break;
+        }
         // Compare with arr[mid] instead of arr[start] in the second branch
         if (arr[start] <= arr[mid]) {
             ans = min(ans, arr[start]);
