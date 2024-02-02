@@ -13,9 +13,9 @@ int sqrtUsingBinarySearch(int x)
 {
     int start = 0;
     int end = x;
-
-    int mid = start + (end - start) / 2;
-    int answer = -1;
+    
+    long long  int mid = start + (end - start) / 2;
+    long long int  answer = -1;  // To avoid the overflow long long used 
 
     if (x == 0)
     {
