@@ -1,6 +1,6 @@
 #  Introduction to Character Array and Strings
 
-In C++, a char array is a data structure that holds a sequence of characters in contiguous memory locations. It is commonly used to represent strings, but it can also be used to hold any sequence of characters.
+In C++, a char array is a data structure that holds a sequence of characters in contiguous memory locations. It is commonly used to represent strings, but it can also be used to hold any sequence of characters. char store 1 byte information means equal to 8 bit 
 
 # Declarations
 
